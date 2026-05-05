@@ -1,0 +1,166 @@
+{
+  "animations": [
+    {
+      "id": "slime_chan_idle_neutral",
+      "file": "assets/base/slime_chan/IDLE_NEUTRAL.mp4",
+      "tags": ["idle", "neutral", "calm"],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "idle_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "idle"
+    },
+    {
+      "id": "slime_chan_walk_wander",
+      "file": "assets/base/slime_chan/WALK.mp4",
+      "tags": ["walking", "wander", "explore"],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "walk"
+    },
+    {
+      "id": "slime_chan_force_sleep_exhausted",
+      "file": "assets/base/slime_chan/FORCE_SLEEP.mp4",
+      "tags": ["sleep", "sleeping", "exhausted"],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_sleep"
+    },
+    {
+      "id": "slime_chan_carried_scared",
+      "file": "assets/base/slime_chan/CARRIED.mp4",
+      "tags": ["carried", "lifted", "scared"],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "carried"
+    },
+    {
+      "id": "slime_chan_stroke_calm",
+      "file": "assets/base/slime_chan/STROKE.mp4",
+      "tags": ["pet_stroke", "happy", "calm"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "pet_stroke"
+    },
+    {
+      "id": "slime_chan_play_ball",
+      "file": "assets/base/slime_chan/PLAY.mp4",
+      "tags": ["play_ball", "playful", "excited"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "play_ball"
+    },
+    {
+      "id": "slime_chan_eat_fed",
+      "file": "assets/base/slime_chan/EAT.mp4",
+      "tags": ["eat", "eating", "fed"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "eat"
+    },
+    {
+      "id": "slime_chan_bath_shaking",
+      "file": "assets/base/slime_chan/BATH.mp4",
+      "tags": ["bath", "cleanliness", "shaking"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "bath"
+    },
+    {
+      "id": "slime_chan_double_click_excited",
+      "file": "assets/base/slime_chan/DOUBLE_CLICK.mp4",
+      "tags": ["excited_spin", "excited", "jumping"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "double_click"
+    },
+    {
+      "id": "slime_chan_drowsy_idle",
+      "file": "assets/base/slime_chan/DROWSY.mp4",
+      "tags": ["drowsy_idle", "sleepy", "yawning"],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "drowsy_idle"
+    },
+    {
+      "id": "slime_chan_force_hungry_beg_food",
+      "file": "assets/base/slime_chan/FORCE_HUNGRY.mp4",
+      "tags": ["starving", "hungry", "beg_food"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_hungry"
+    },
+    {
+      "id": "slime_chan_force_dirty_miserable",
+      "file": "assets/base/slime_chan/FORCE_DIRTY.mp4",
+      "tags": ["filthy", "dirty_shake", "miserable"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_dirty"
+    },
+    {
+      "id": "slime_chan_force_sad_comfort",
+      "file": "assets/base/slime_chan/FORCE_SAD.mp4",
+      "tags": ["depressed", "comforting", "sad_pet"],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_sad"
+    }
+  ],
+  "tag_synonyms": {
+    "idle": ["neutral", "calm"],
+    "playful": ["excited", "bouncy"],
+    "curious": ["alert", "investigating"],
+    "rest": ["sleepy", "cozy"]
+  }
+}

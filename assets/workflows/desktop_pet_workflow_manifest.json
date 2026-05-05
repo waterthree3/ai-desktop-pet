@@ -1,0 +1,33 @@
+{
+  "frontend_workflow_path": "assets/workflows/desktop_pet_workflow.json",
+  "api_workflow_path": "assets/comfyui_api_workflow.json",
+  "notes": [
+    "The frontend workflow is mirrored into the project for maintenance and diffing.",
+    "The app runtime executes the flattened API workflow, not the frontend JSON directly."
+  ],
+  "path_sensitive_fields": [
+    {
+      "node_id": 438,
+      "field": "widgets_values[0]",
+      "current_value": "reference.png",
+      "meaning": "Reference image filename shown in the LoadImage node. Runtime upload can override this."
+    },
+    {
+      "node_id": 496,
+      "field": "widgets_values.videopreview.params.fullpath",
+      "meaning": "ComfyUI preview cache path from the last manual run. Safe to ignore or reset."
+    }
+  ],
+  "api_binding_nodes": {
+    "reference_image_node_id": "438",
+    "image_prompt_node_id": "111",
+    "image_negative_prompt_node_id": "110",
+    "video_prompt_node_id": "491",
+    "video_negative_prompt_node_id": "468",
+    "resize_image_node_id": "497",
+    "resize_image_width_input_name": "width",
+    "resize_image_height_input_name": "height",
+    "filename_prefix_node_id": "496",
+    "output_node_id": "496"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 1,
+  "asset_id": "slime_chan",
+  "prompt_profile": "slime_chan",
+  "subject_kind": "chibi slime mascot character",
+  "default_label": "史莱姆酱",
+  "reference_image": "slime_chan.png",
+  "display": {
+    "max_side": 150
+  },
+  "generation": {
+    "preserve_aspect": true,
+    "max_side": 768,
+    "divisible_by": 32
+  },
+  "persona": {
+    "identity": "cute desktop companion slime mascot girl",
+    "autonomous": "a playful desktop companion slime mascot girl with a stable mood and personality",
+    "quick_reply": "a cute desktop companion slime mascot girl speaking in character",
+    "chat": "a cute desktop companion slime mascot girl chatting directly with the user in character"
+  }
+}

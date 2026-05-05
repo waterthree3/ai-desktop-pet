@@ -1,0 +1,1256 @@
+{
+  "animations": [
+    {
+      "id": "click_happy",
+      "file": "assets/base/dog/CLICK.mp4",
+      "tags": [
+        "pet_stroke",
+        "happy",
+        "wagging"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "pet_stroke",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 1
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 4
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "happy"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "double_click_excited",
+      "file": "assets/base/dog/DOUBLE_CLICK.mp4",
+      "tags": [
+        "excited_spin",
+        "excited",
+        "jumping"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "excited_spin",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -3,
+            "mood": 10
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 1,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "excited"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "feed_eating",
+      "file": "assets/base/dog/EAT.mp4",
+      "tags": [
+        "eat",
+        "eating",
+        "fed"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "eat",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "eat/feed",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 5,
+            "cleanliness": -1,
+            "energy": 2,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": 45,
+            "cleanliness": -1,
+            "energy": 8,
+            "mood": 6
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 2,
+            "exp": 2,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "well_fed"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "feed_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "play_ball",
+      "file": "assets/base/dog/PLAY.mp4",
+      "tags": [
+        "play_ball",
+        "playful",
+        "excited"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "play_ball",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "play/exercise",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": -1,
+            "cleanliness": -2,
+            "energy": -3,
+            "mood": 3
+          },
+          "progressive": {
+            "hunger": -3,
+            "cleanliness": -6,
+            "energy": -12,
+            "mood": 12
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 3,
+            "exp": 4,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "restless",
+          "proud"
+        ],
+        "cooldown_sec": 90,
+        "stack_decay_group": "play_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "bath_grumpy",
+      "file": "assets/base/dog/BATH.mp4",
+      "tags": [
+        "bath",
+        "cleanliness",
+        "shaking"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "bath",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "bath/groom",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 10,
+            "energy": -1,
+            "mood": -4
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 70,
+            "energy": -1,
+            "mood": -6
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 1,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "clean"
+        ],
+        "cooldown_sec": 180,
+        "stack_decay_group": "groom_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "stroke_calm",
+      "file": "assets/base/dog/STROKE.mp4",
+      "tags": [
+        "pet_stroke",
+        "happy",
+        "calm"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "pet_stroke",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 7
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "happy"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "walk_mode",
+      "file": "assets/base/dog/WALK.mp4",
+      "tags": [
+        "walking",
+        "wander",
+        "explore"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "walking",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "explore/show_off",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": -2,
+            "cleanliness": -3,
+            "energy": -5,
+            "mood": 4
+          },
+          "progressive": {
+            "hunger": -6,
+            "cleanliness": -9,
+            "energy": -25,
+            "mood": 15
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 1,
+            "exp": 3,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "proud",
+          "curious"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "explore_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "force_hungry",
+      "file": "assets/base/dog/FORCE_HUNGRY.mp4",
+      "tags": [
+        "starving",
+        "hungry",
+        "beg_food"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "starving",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "beg/complain",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -2
+          },
+          "progressive": {
+            "hunger": -1,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -1
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "hungry",
+          "clingy"
+        ],
+        "cooldown_sec": 60,
+        "stack_decay_group": "complain_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "force_sleep",
+      "file": "assets/base/dog/FORCE_SLEEP.mp4",
+      "tags": [
+        "sleep",
+        "sleeping",
+        "exhausted"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "force_sleep",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "sleepy"
+        ],
+        "cooldown_sec": 240,
+        "stack_decay_group": "rest_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "drowsy_idle",
+      "file": "assets/base/dog/DROWSY.mp4",
+      "tags": [
+        "drowsy_idle",
+        "sleepy",
+        "yawning"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "common",
+      "behavior_type": "drowsy_idle",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "sleep/rest",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": -2
+          },
+          "progressive": {
+            "hunger": -2,
+            "cleanliness": 0,
+            "energy": -8,
+            "mood": -2
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "sleepy"
+        ],
+        "cooldown_sec": 240,
+        "stack_decay_group": "rest_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "drag_carried",
+      "file": "assets/base/dog/CARRIED.mp4",
+      "tags": [
+        "carried",
+        "lifted",
+        "scared"
+      ],
+      "loop": true,
+      "fps": 12,
+      "source": "generated",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "rare",
+      "behavior_type": "carried",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": -1
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "scared"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "idle_neutral",
+      "file": "assets/base/dog/IDLE_NEUTRAL.mp4",
+      "tags": [
+        "idle",
+        "neutral",
+        "calm"
+      ],
+      "loop": true,
+      "fps": 16,
+      "source": "generated",
+      "reuse_scope": "idle_only",
+      "blocked": false,
+      "rating": 0,
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "rare",
+      "behavior_type": "idle",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "low_spirited"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "dog_explore_curious_sniffing",
+      "file": "assets/generated/dog/dog_explore_curious_sniffing.mp4",
+      "tags": [
+        "sniff_floor",
+        "explore",
+        "curious",
+        "sniffing"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_profile": "dog",
+          "pet_label": "dog",
+          "tags": [
+            "sniff_floor",
+            "explore",
+            "curious",
+            "sniffing"
+          ],
+          "behavior_type": "sniff_floor",
+          "action_desc": "lowers head and sniffs the floor in a small arc",
+          "intent_mode": "curious",
+          "pet_id": "dog"
+        },
+        "image_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, curious searching posture, single character only, preserve the same face, fur pattern, paw proportions, ear shape, and tail shape, action category: sniff floor, action intent: lowers head and sniffs the floor in a small arc",
+        "image_negative_prompt": "multiple pets, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, extra dog, double tail, missing ears",
+        "video_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, nose-led sniffing motion, small attentive head turns, preserve the same framing, fur pattern, paw proportions, ear shape, and tail shape, motion category: sniff floor, motion intent: lowers head and sniffs the floor in a small arc",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra subject, hard cut, flicker, broken anatomy, frozen frame, background clutter, tail duplication, rubbery legs, paw count changing"
+      },
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "rare",
+      "behavior_type": "sniff_floor",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "explore/show_off",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": -2,
+            "cleanliness": -1,
+            "energy": -4,
+            "mood": 3
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 1,
+            "exp": 3,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "proud",
+          "curious"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "explore_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "dog_cleanliness_self_care_calm",
+      "file": "assets/generated/dog/dog_cleanliness_self_care_calm.mp4",
+      "tags": [
+        "groom_paw",
+        "cleanliness",
+        "self_care",
+        "groom",
+        "calm"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_profile": "dog",
+          "pet_label": "dog",
+          "tags": [
+            "cleanliness",
+            "self_care",
+            "groom",
+            "calm"
+          ],
+          "behavior_type": "groom_paw",
+          "action_desc": "calmly grooms and cleans one front paw",
+          "intent_mode": "self_care",
+          "pet_id": "dog"
+        }
+      },
+      "pet_id": "dog",
+      "pet_profile": "dog",
+      "rarity": "rare",
+      "behavior_type": "groom_paw",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "bath/groom",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -1
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 28,
+            "energy": -1,
+            "mood": 2
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 2,
+            "exp": 1,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "clean"
+        ],
+        "cooldown_sec": 180,
+        "stack_decay_group": "groom_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "dog_beg_food_request_excited",
+      "file": "assets/generated/dog/dog_beg_food_request_excited.mp4",
+      "tags": [
+        "beg_food",
+        "request",
+        "excited"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "rarity": "rare",
+      "behavior_type": "beg_food",
+      "discovered_at": "2026-05-03T12:21:10",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "beg/complain",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -2,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "progressive": {
+            "hunger": -1,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -1,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "hungry",
+          "clingy"
+        ],
+        "cooldown_sec": 60,
+        "stack_decay_group": "complain_family",
+        "effect_source": "rule"
+      },
+      "pet_id": "dog",
+      "pet_profile": "dog"
+    },
+    {
+      "id": "dog_show_off_showcase_excited",
+      "file": "assets/generated/dog/dog_show_off_showcase_excited.mp4",
+      "tags": [
+        "show_off",
+        "showcase",
+        "excited"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "rarity": "rare",
+      "behavior_type": "show_off",
+      "discovered_at": "2026-05-03T12:21:10",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "explore/show_off",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": 2,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "progressive": {
+            "hunger": -2,
+            "cleanliness": -1,
+            "energy": -4,
+            "mood": 3,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 1,
+            "exp": 3,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "proud",
+          "curious"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "explore_family",
+        "effect_source": "rule"
+      },
+      "pet_id": "dog",
+      "pet_profile": "dog"
+    },
+    {
+      "id": "dog_paw_bounce_playful_curious",
+      "file": "assets/generated/dog/dog_paw_bounce_playful_curious.mp4",
+      "tags": [
+        "paw_bounce",
+        "playful",
+        "curious",
+        "idle"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "rarity": "rare",
+      "behavior_type": "paw_bounce",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_profile": "dog",
+          "pet_label": "dog",
+          "tags": [
+            "paw_bounce",
+            "playful",
+            "curious",
+            "idle"
+          ],
+          "behavior_type": "paw_bounce",
+          "action_desc": "bounces on front paws, looking around playfully",
+          "intent_mode": "playful",
+          "pet_id": "dog"
+        },
+        "image_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, alert playful posture, relaxed idle standing pose, balanced posture ready for a seamless loop, single character only, preserve the same face, fur pattern, paw proportions, ear shape, and tail shape, action category: paw bounce, action intent: bounces on front paws, looking around playfully",
+        "image_negative_prompt": "multiple pets, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, extra dog, double tail, missing ears",
+        "video_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, light playful bounce, quick attentive reaction, gentle breathing loop, soft blink that returns to the same pose, preserve the same framing, fur pattern, paw proportions, ear shape, and tail shape, motion category: paw bounce, motion intent: bounces on front paws, looking around playfully",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra subject, hard cut, flicker, broken anatomy, frozen frame, background clutter, tail duplication, rubbery legs, paw count changing"
+      },
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "play/exercise",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": -1,
+            "cleanliness": 0,
+            "energy": -2,
+            "mood": 3,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "progressive": {
+            "hunger": -3,
+            "cleanliness": -2,
+            "energy": -4,
+            "mood": 4,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 3,
+            "exp": 4,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "restless",
+          "proud"
+        ],
+        "cooldown_sec": 90,
+        "stack_decay_group": "play_family",
+        "effect_source": "rule"
+      },
+      "discovered_at": "2026-05-03T13:43:20",
+      "pet_id": "dog",
+      "pet_profile": "dog"
+    },
+    {
+      "id": "dog_swim_playful_water_play_splash",
+      "file": "assets/generated/dog/dog_swim_playful_water_play_splash.mp4",
+      "tags": [
+        "swim",
+        "playful",
+        "water_play",
+        "splash",
+        "excited"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "blocked": false,
+      "rating": 0,
+      "rarity": "rare",
+      "behavior_type": "swim",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_profile": "dog",
+          "pet_label": "dog",
+          "tags": [
+            "swim",
+            "water_play",
+            "splash",
+            "playful",
+            "excited"
+          ],
+          "behavior_type": "swim",
+          "action_desc": "paddles happily in the water with playful splashes",
+          "pose_focus": [
+            "dog paddling on water",
+            "front paws splashing lightly"
+          ],
+          "motion_focus": [
+            "looping paddle motion",
+            "small water splash rhythm"
+          ],
+          "video_overrides": [
+            "water-play action",
+            "full body visible while paddling"
+          ],
+          "negative_overrides": [
+            "no beach props",
+            "no human swimmer",
+            "no pool toys unless requested"
+          ],
+          "intent_mode": "playful",
+          "pet_id": "dog"
+        },
+        "image_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, alert playful posture, spring-loaded energetic stance, single character only, preserve the same face, fur pattern, paw proportions, ear shape, and tail shape, dog paddling on water, front paws splashing lightly, action category: swim, action intent: paddles happily in the water with playful splashes",
+        "image_negative_prompt": "multiple pets, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, extra dog, double tail, missing ears, no beach props, no human swimmer, no pool toys unless requested",
+        "video_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, light playful bounce, quick attentive reaction, quick full-body bounce, brief excited body motion, preserve the same framing, fur pattern, paw proportions, ear shape, and tail shape, water-play action, full body visible while paddling, looping paddle motion, small water splash rhythm, motion category: swim, motion intent: paddles happily in the water with playful splashes",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra subject, hard cut, flicker, broken anatomy, frozen frame, background clutter, tail duplication, rubbery legs, paw count changing, no beach props, no human swimmer, no pool toys unless requested"
+      },
+      "reuse_scope": "ai_exact_only",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "play/exercise",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": -1,
+            "cleanliness": 0,
+            "energy": -2,
+            "mood": 3,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "progressive": {
+            "hunger": -3,
+            "cleanliness": -2,
+            "energy": -4,
+            "mood": 4,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 3,
+            "exp": 4,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "restless",
+          "proud"
+        ],
+        "cooldown_sec": 90,
+        "stack_decay_group": "play_family",
+        "effect_source": "rule"
+      },
+      "discovered_at": "2026-05-03T19:27:42",
+      "pet_id": "dog",
+      "pet_profile": "dog"
+    },
+    {
+      "id": "dog_investigate_sound_curious_explore_alert",
+      "file": "assets/generated/dog/dog_investigate_sound_curious_explore_alert.mp4",
+      "tags": [
+        "investigate_sound",
+        "curious",
+        "explore",
+        "alert"
+      ],
+      "loop": false,
+      "fps": 16,
+      "source": "generated",
+      "blocked": false,
+      "rating": 0,
+      "rarity": "rare",
+      "behavior_type": "investigate_sound",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_profile": "dog",
+          "pet_label": "dog",
+          "tags": [
+            "investigate_sound",
+            "curious",
+            "explore",
+            "alert"
+          ],
+          "behavior_type": "investigate_sound",
+          "action_desc": "tilts head and listens intently to a distant sound, then sniffs the air",
+          "intent_mode": "curious",
+          "pet_id": "dog"
+        },
+        "image_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, curious searching posture, single character only, preserve the same face, fur pattern, paw proportions, ear shape, and tail shape, action category: investigate sound, action intent: tilts head and listens intently to a distant sound, then sniffs the air",
+        "image_negative_prompt": "multiple pets, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, extra dog, double tail, missing ears",
+        "video_prompt": "the same dog from the reference image, dog character, readable muzzle, four paws, single tail, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, nose-led sniffing motion, small attentive head turns, preserve the same framing, fur pattern, paw proportions, ear shape, and tail shape, motion category: investigate sound, motion intent: tilts head and listens intently to a distant sound, then sniffs the air",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra subject, hard cut, flicker, broken anatomy, frozen frame, background clutter, tail duplication, rubbery legs, paw count changing"
+      },
+      "reuse_scope": "ai_exact_only",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "explore/show_off",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": 2,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "progressive": {
+            "hunger": -2,
+            "cleanliness": -1,
+            "energy": -4,
+            "mood": 3,
+            "exp": 0,
+            "intimacy": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 1,
+            "exp": 3,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "proud",
+          "curious"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "explore_family",
+        "effect_source": "rule"
+      },
+      "discovered_at": "2026-05-03T19:40:54",
+      "pet_id": "dog",
+      "pet_profile": "dog"
+    }
+  ],
+  "tag_synonyms": {
+    "happy": [
+      "joyful",
+      "cheerful",
+      "pleased",
+      "content",
+      "glad"
+    ],
+    "sad": [
+      "unhappy",
+      "upset",
+      "depressed",
+      "disappointed",
+      "gloomy"
+    ],
+    "excited": [
+      "energetic",
+      "hyper",
+      "enthusiastic",
+      "eager",
+      "excited_spin",
+      "jumping"
+    ],
+    "idle": [
+      "neutral",
+      "resting",
+      "waiting"
+    ],
+    "hungry": [
+      "starving",
+      "craving",
+      "food",
+      "beg_food"
+    ],
+    "sleepy": [
+      "drowsy",
+      "drowsy_idle",
+      "yawning"
+    ],
+    "tired": [
+      "exhausted",
+      "fatigued",
+      "worn_out"
+    ],
+    "angry": [
+      "annoyed",
+      "frustrated",
+      "mad"
+    ],
+    "scared": [
+      "afraid",
+      "nervous",
+      "anxious",
+      "startled"
+    ],
+    "playful": [
+      "frisky",
+      "bouncy",
+      "lively",
+      "play_ball"
+    ],
+    "pet_stroke": [
+      "stroke",
+      "wagging",
+      "petting"
+    ],
+    "eat": [
+      "eating",
+      "nom",
+      "munch"
+    ],
+    "bath": [
+      "cleanliness",
+      "shaking",
+      "bathing"
+    ],
+    "self_care": [
+      "groom",
+      "grooming",
+      "cleaning"
+    ],
+    "walking": [
+      "wander",
+      "explore",
+      "moving",
+      "stroll"
+    ],
+    "sleep": [
+      "sleeping",
+      "zzz",
+      "napping"
+    ],
+    "look_at_cursor": [
+      "curious",
+      "watching",
+      "staring"
+    ],
+    "carried": [
+      "lifted",
+      "held",
+      "grabbed",
+      "dragging"
+    ],
+    "dragging": [
+      "carried",
+      "lifted",
+      "held"
+    ]
+  }
+}

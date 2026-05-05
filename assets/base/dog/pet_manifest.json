@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "asset_id": "dog",
+  "pet_id": "dog",
+  "prompt_profile": "dog",
+  "subject_kind": "cartoon dog character",
+  "kind": "dog",
+  "default_label": "corgi puppy",
+  "reference_image": "dog.png",
+  "persona": {
+    "identity": "cute desktop companion corgi puppy",
+    "autonomous": "a cheerful desktop companion dog character with a stable mood and personality",
+    "quick_reply": "a cute desktop companion dog character speaking in character",
+    "chat": "a cute desktop companion dog character having a direct conversation with the user"
+  }
+}

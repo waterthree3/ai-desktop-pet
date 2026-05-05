@@ -1,0 +1,1121 @@
+{
+  "animations": [
+    {
+      "id": "slime_idle_neutral",
+      "file": "assets/base/slime_chan/IDLE_NEUTRAL.mp4",
+      "tags": [
+        "idle",
+        "neutral",
+        "calm"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "idle_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "idle",
+            "neutral",
+            "calm"
+          ],
+          "behavior_type": "idle",
+          "action_desc": "rests in place with a soft rounded posture and a tiny gentle bounce",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "clean rounded silhouette"
+          ],
+          "video_overrides": [
+            "tiny breathing loop only",
+            "return to the same pose",
+            "avoid large position drift"
+          ],
+          "negative_overrides": [
+            "no second character",
+            "no large shape morphing"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, relaxed idle standing pose, balanced posture ready for a seamless loop, neutral attentive expression, full body facing forward in a stable stance, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, clean rounded silhouette, action category: idle, action intent: rests in place with a soft rounded posture and a tiny gentle bounce",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no second character, no large shape morphing",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, gentle breathing loop, soft blink that returns to the same pose, tiny ear twitch, minimal body sway with no stepping, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, tiny breathing loop only, return to the same pose, avoid large position drift, motion category: idle, motion intent: rests in place with a soft rounded posture and a tiny gentle bounce",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no second character, no large shape morphing"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "behavior_type": "idle",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "low_spirited"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_walk_wander",
+      "file": "assets/base/slime_chan/WALK.mp4",
+      "tags": [
+        "walking",
+        "wander",
+        "explore"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "walking",
+            "wander",
+            "explore"
+          ],
+          "behavior_type": "walk",
+          "action_desc": "takes short bouncy steps in place with a curious wandering rhythm",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "readable feet or lower-body motion cues"
+          ],
+          "video_overrides": [
+            "small loop only",
+            "fixed camera",
+            "avoid large horizontal travel"
+          ],
+          "negative_overrides": [
+            "no motion blur",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, balanced stepping posture, sniffing and exploring posture, curious searching posture, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, readable feet or lower-body motion cues, action category: walk, action intent: takes short bouncy steps in place with a curious wandering rhythm",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no motion blur, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, small stepping-in-place loop, sniffing motion, small stepping loop, nose-led sniffing motion, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, small loop only, avoid large horizontal travel, motion category: walk, motion intent: takes short bouncy steps in place with a curious wandering rhythm",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no motion blur, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "behavior_type": "walk",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "explore/show_off",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": -2,
+            "cleanliness": -3,
+            "energy": -5,
+            "mood": 4
+          },
+          "progressive": {
+            "hunger": -6,
+            "cleanliness": -9,
+            "energy": -25,
+            "mood": 15
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 1,
+            "exp": 3,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "proud",
+          "curious"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "explore_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_carried_scared",
+      "file": "assets/base/slime_chan/CARRIED.mp4",
+      "tags": [
+        "carried",
+        "lifted",
+        "scared"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "carried",
+            "lifted",
+            "scared"
+          ],
+          "behavior_type": "carried",
+          "action_desc": "is gently lifted into the air with a slightly tense wobble and startled expression",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "clear suspended pose"
+          ],
+          "video_overrides": [
+            "small suspended wobble",
+            "fixed camera",
+            "avoid large drift"
+          ],
+          "negative_overrides": [
+            "no visible human hands",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, being gently lifted off the ground, legs slightly tucked in, being held in the air, body gathered into a carried pose, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, clear suspended pose, action category: carried, action intent: is gently lifted into the air with a slightly tense wobble and startled expression",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no visible human hands, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, gentle suspended body bob, small paw sway, loopable held motion, small hanging paw motion, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, small suspended wobble, avoid large drift, motion category: carried, motion intent: is gently lifted into the air with a slightly tense wobble and startled expression",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no visible human hands, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "behavior_type": "carried",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": -1
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "scared"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_stroke_calm",
+      "file": "assets/base/slime_chan/STROKE.mp4",
+      "tags": [
+        "pet_stroke",
+        "happy",
+        "calm"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "pet_stroke",
+            "happy",
+            "calm"
+          ],
+          "behavior_type": "pet_stroke",
+          "action_desc": "leans into a gentle petting reaction with a happy soft bounce and relaxed face",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "happy receptive pose"
+          ],
+          "video_overrides": [
+            "short satisfying loop",
+            "small body bounce",
+            "return to the same pose"
+          ],
+          "negative_overrides": [
+            "no visible human hand",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, relaxed posture enjoying attention, bright cheerful expression, calm settled posture, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, happy receptive pose, action category: pet stroke, action intent: leans into a gentle petting reaction with a happy soft bounce and relaxed face",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no visible human hand, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, gentle head tilt, soft blink, relaxed body response, soft happy body sway, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short satisfying loop, small body bounce, return to the same pose, motion category: pet stroke, motion intent: leans into a gentle petting reaction with a happy soft bounce and relaxed face",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no visible human hand, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "behavior_type": "pet_stroke",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 7
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "happy"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_play_ball",
+      "file": "assets/base/slime_chan/PLAY.mp4",
+      "tags": [
+        "play_ball",
+        "playful",
+        "excited"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "ai_exact_only",
+      "blocked": false,
+      "rating": 0,
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "play_ball",
+            "playful",
+            "excited"
+          ],
+          "behavior_type": "play",
+          "action_desc": "does a cheerful playful hop with a bright energetic rebound and eager attention",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "clear playful pose"
+          ],
+          "video_overrides": [
+            "small energetic loop",
+            "avoid large position drift",
+            "return to the same pose"
+          ],
+          "negative_overrides": [
+            "no second character",
+            "no extreme squash and stretch"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, engaging with a toy ball, playful ready-to-pounce stance, alert playful posture, spring-loaded energetic stance, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, clear playful pose, action category: play, action intent: does a cheerful playful hop with a bright energetic rebound and eager attention",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no second character, no extreme squash and stretch",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, small repeated interaction with the toy ball, light playful bounce, quick attentive reaction, quick full-body bounce, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, small energetic loop, avoid large position drift, return to the same pose, motion category: play, motion intent: does a cheerful playful hop with a bright energetic rebound and eager attention",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no second character, no extreme squash and stretch"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "behavior_type": "play",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "play/exercise",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": -1,
+            "cleanliness": -2,
+            "energy": -3,
+            "mood": 3
+          },
+          "progressive": {
+            "hunger": -3,
+            "cleanliness": -6,
+            "energy": -12,
+            "mood": 12
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 3,
+            "exp": 4,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "restless",
+          "proud"
+        ],
+        "cooldown_sec": 90,
+        "stack_decay_group": "play_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_eat_fed",
+      "file": "assets/base/slime_chan/EAT.mp4",
+      "tags": [
+        "eat",
+        "eating",
+        "fed"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "eat",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "eat",
+            "eating",
+            "fed"
+          ],
+          "behavior_type": "eat",
+          "action_desc": "does a happy little eating reaction with eager nibbling and a satisfied bounce",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "cute feeding pose"
+          ],
+          "video_overrides": [
+            "short eating loop",
+            "return to the same pose",
+            "small mouth and body motion only"
+          ],
+          "negative_overrides": [
+            "no visible human hand",
+            "no table scene",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, head lowered toward food, chewing pose, focused eating pose, content post-meal posture, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, cute feeding pose, action category: eat, action intent: does a happy little eating reaction with eager nibbling and a satisfied bounce",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no visible human hand, no table scene, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, small chewing motion, gentle head bob, steady chewing loop, subtle satisfied body motion, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short eating loop, return to the same pose, small mouth and body motion only, motion category: eat, motion intent: does a happy little eating reaction with eager nibbling and a satisfied bounce",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no visible human hand, no table scene, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "eat/feed",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 5,
+            "cleanliness": -1,
+            "energy": 2,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": 45,
+            "cleanliness": -1,
+            "energy": 8,
+            "mood": 6
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 2,
+            "exp": 2,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "well_fed"
+        ],
+        "cooldown_sec": 120,
+        "stack_decay_group": "feed_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_bath_shaking",
+      "file": "assets/base/slime_chan/BATH.mp4",
+      "tags": [
+        "bath",
+        "cleanliness",
+        "shaking"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "bath",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "bath",
+            "cleanliness",
+            "shaking"
+          ],
+          "behavior_type": "bath",
+          "action_desc": "reacts to a bath with a tiny wet shake and a slightly grumbly cute face",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "clean readable silhouette"
+          ],
+          "video_overrides": [
+            "short shake motion",
+            "return to the same pose",
+            "keep the character centered"
+          ],
+          "negative_overrides": [
+            "no visible human hand",
+            "no props",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, body prepared for a shake, freshly washed pose, body tensed for a shake, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, clean readable silhouette, action category: bath, action intent: reacts to a bath with a tiny wet shake and a slightly grumbly cute face",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no visible human hand, no props, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, brief body shake, small water-shake follow-through, small fresh energetic motion, quick shake loop that returns to the same frame, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short shake motion, return to the same pose, keep the character centered, motion category: bath, motion intent: reacts to a bath with a tiny wet shake and a slightly grumbly cute face",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no visible human hand, no props, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "bath/groom",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 10,
+            "energy": -1,
+            "mood": -4
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 70,
+            "energy": -1,
+            "mood": -6
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 1,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "clean"
+        ],
+        "cooldown_sec": 180,
+        "stack_decay_group": "groom_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_double_click_excited",
+      "file": "assets/base/slime_chan/DOUBLE_CLICK.mp4",
+      "tags": [
+        "excited_spin",
+        "excited",
+        "jumping"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "direct_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "double_click",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "excited_spin",
+            "excited",
+            "jumping"
+          ],
+          "behavior_type": "double_click",
+          "action_desc": "bursts into a quick excited hop with a bright energetic reaction",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "clear springy pose"
+          ],
+          "video_overrides": [
+            "short energetic burst",
+            "return to the same pose",
+            "avoid large drift"
+          ],
+          "negative_overrides": [
+            "no second character",
+            "no blur"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, spring-loaded energetic stance, mid-bounce pose that can return to the same stance, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, clear springy pose, action category: double click, action intent: bursts into a quick excited hop with a bright energetic reaction",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no second character, no blur",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, quick full-body bounce, brief excited body motion, small repeated hop that returns to the same pose, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short energetic burst, return to the same pose, avoid large drift, motion category: double click, motion intent: bursts into a quick excited hop with a bright energetic reaction",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no second character, no blur"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "idle/emote",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": 2
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -3,
+            "mood": 10
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 1,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "excited"
+        ],
+        "cooldown_sec": 30,
+        "stack_decay_group": "idle_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_drowsy_idle",
+      "file": "assets/base/slime_chan/DROWSY.mp4",
+      "tags": [
+        "drowsy_idle",
+        "sleepy",
+        "yawning"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "drowsy_idle",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "sleep",
+            "sleeping",
+            "exhausted"
+          ],
+          "behavior_type": "force_sleep",
+          "action_desc": "drops into an exhausted sleep pose as if all energy has run out",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "heavier sleepy posture"
+          ],
+          "video_overrides": [
+            "slow exhausted breathing loop",
+            "minimal motion",
+            "return to the same pose"
+          ],
+          "negative_overrides": [
+            "no alert expression",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, curled resting posture, eyes closed, deep sleeping posture, collapsed tired posture, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, heavier sleepy posture, action category: force sleep, action intent: drops into an exhausted sleep pose as if all energy has run out",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no alert expression, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, gentle breathing loop, tiny ear twitch, slow breathing loop, tiny paw twitch, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, slow exhausted breathing loop, minimal motion, return to the same pose, motion category: force sleep, motion intent: drops into an exhausted sleep pose as if all energy has run out",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no alert expression, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "sleep/rest",
+        "impact_level": "medium",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": -2
+          },
+          "progressive": {
+            "hunger": -2,
+            "cleanliness": 0,
+            "energy": -8,
+            "mood": -2
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "sleepy"
+        ],
+        "cooldown_sec": 240,
+        "stack_decay_group": "rest_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_force_hungry_beg_food",
+      "file": "assets/base/slime_chan/FORCE_HUNGRY.mp4",
+      "tags": [
+        "starving",
+        "hungry",
+        "beg_food"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_hungry",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "starving",
+            "hungry",
+            "beg_food"
+          ],
+          "behavior_type": "force_hungry",
+          "action_desc": "looks very hungry and begs for food with needy bouncing and pleading eyes",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "needy begging pose"
+          ],
+          "video_overrides": [
+            "short pleading loop",
+            "return to the same pose",
+            "small body bounce"
+          ],
+          "negative_overrides": [
+            "no second character",
+            "no props"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, begging posture looking upward, expectant food-seeking posture, one front limb slightly raised to beg, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, needy begging pose, action category: force hungry, action intent: looks very hungry and begs for food with needy bouncing and pleading eyes",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no second character, no props",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, small begging motion, restless body sway, light impatient head bob, small repeated begging motion, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short pleading loop, return to the same pose, small body bounce, motion category: force hungry, motion intent: looks very hungry and begs for food with needy bouncing and pleading eyes",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no second character, no props"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "beg/complain",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -2
+          },
+          "progressive": {
+            "hunger": -1,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -1
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "hungry",
+          "clingy"
+        ],
+        "cooldown_sec": 60,
+        "stack_decay_group": "complain_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_force_dirty_miserable",
+      "file": "assets/base/slime_chan/FORCE_DIRTY.mp4",
+      "tags": [
+        "filthy",
+        "dirty_shake",
+        "miserable"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_dirty",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "filthy",
+            "dirty_shake",
+            "miserable"
+          ],
+          "behavior_type": "force_dirty",
+          "action_desc": "looks sticky and miserable, shaking off grime with an embarrassed pout",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "readable unhappy silhouette"
+          ],
+          "video_overrides": [
+            "short shaking loop",
+            "return to the same pose",
+            "keep the character centered"
+          ],
+          "negative_overrides": [
+            "no second character",
+            "no props"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, natural readable action pose, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, readable unhappy silhouette, action category: force dirty, action intent: looks sticky and miserable, shaking off grime with an embarrassed pout",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no second character, no props",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, subtle looped body motion, gentle idle motion, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short shaking loop, return to the same pose, keep the character centered, motion category: force dirty, motion intent: looks sticky and miserable, shaking off grime with an embarrassed pout",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no second character, no props"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "beg/complain",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": -2
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": -1,
+            "energy": 0,
+            "mood": -2
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "dirty",
+          "clingy"
+        ],
+        "cooldown_sec": 60,
+        "stack_decay_group": "complain_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_force_sad_comfort",
+      "file": "assets/base/slime_chan/FORCE_SAD.mp4",
+      "tags": [
+        "depressed",
+        "comforting",
+        "sad_pet"
+      ],
+      "loop": false,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_sad",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "depressed",
+            "comforting",
+            "sad_pet"
+          ],
+          "behavior_type": "force_sad",
+          "action_desc": "looks downcast and slowly perks up from a comforting soothing reaction",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "gentle comfort pose"
+          ],
+          "video_overrides": [
+            "short emotional loop",
+            "return to the same pose",
+            "small body motion only"
+          ],
+          "negative_overrides": [
+            "no second character",
+            "no props"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, natural readable action pose, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, gentle comfort pose, action category: force sad, action intent: looks downcast and slowly perks up from a comforting soothing reaction",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no second character, no props",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, subtle looped body motion, gentle idle motion, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, short emotional loop, return to the same pose, small body motion only, motion category: force sad, motion intent: looks downcast and slowly perks up from a comforting soothing reaction",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no second character, no props"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "beg/complain",
+        "impact_level": "small",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": -3
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": -1,
+            "mood": -3
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 1
+          }
+        },
+        "derived_tags_on_apply": [
+          "depressed",
+          "clingy"
+        ],
+        "cooldown_sec": 60,
+        "stack_decay_group": "complain_family",
+        "effect_source": "rule"
+      }
+    },
+    {
+      "id": "slime_chan_force_sleep_exhausted",
+      "file": "assets/base/slime_chan/FORCE_SLEEP.mp4",
+      "tags": [
+        "sleep",
+        "sleeping",
+        "exhausted"
+      ],
+      "loop": true,
+      "fps": 24,
+      "source": "user_provided",
+      "reuse_scope": "threshold_only",
+      "blocked": false,
+      "rating": 0,
+      "behavior_type": "force_sleep",
+      "generated_prompt": {
+        "prompt_request": {
+          "pet_id": "slime_chan",
+          "pet_profile": "slime_chan",
+          "pet_label": "史莱姆酱",
+          "tags": [
+            "sleeping",
+            "sleep",
+            "cozy"
+          ],
+          "behavior_type": "sleep",
+          "action_desc": "rests in a cozy sleeping pose with closed eyes and a slow soothing rise and fall",
+          "image_overrides": [
+            "single character only",
+            "full body visible",
+            "cozy compact pose"
+          ],
+          "video_overrides": [
+            "very gentle loop",
+            "minimal motion",
+            "return to the same pose"
+          ],
+          "negative_overrides": [
+            "no awake expression",
+            "no second character"
+          ]
+        },
+        "image_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, full body, white background, centered subject, clean silhouette, cute cartoon style, consistent character design, deep sleeping posture, curled resting posture, eyes closed, single character only, preserve the same face, soft rounded silhouette, mascot proportions, and major colors, full body visible, cozy compact pose, action category: sleep, action intent: rests in a cozy sleeping pose with closed eyes and a slow soothing rise and fall",
+        "image_negative_prompt": "multiple characters, duplicate body, extra limbs, cropped body, cropped ears, cut off feet, busy background, text, watermark, blur, identity mismatch, missing slime details, no awake expression, no second character",
+        "video_prompt": "the same 史莱姆酱 from the reference image, single slime mascot character, compact chibi slime silhouette, clear face and soft rounded outline, fixed camera, full body always visible, white background, loopable motion that returns to the same pose, slow breathing loop, tiny paw twitch, gentle breathing loop, tiny ear twitch, preserve the same framing, face, soft rounded silhouette, mascot proportions, and major colors, very gentle loop, minimal motion, return to the same pose, motion category: sleep, motion intent: rests in a cozy sleeping pose with closed eyes and a slow soothing rise and fall",
+        "video_negative_prompt": "camera movement, zoom, scene change, talking, human hands, extra character, hard cut, flicker, broken anatomy, frozen frame, background clutter, identity drift, shape morphing, face flicker, no awake expression, no second character"
+      },
+      "pet_id": "slime_chan",
+      "pet_profile": "slime_chan",
+      "rarity": "common",
+      "effect_profile": {
+        "version": 1,
+        "behavior_family": "sleep/rest",
+        "impact_level": "tiny",
+        "settlement": {
+          "on_start": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "progressive": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0
+          },
+          "on_finish": {
+            "hunger": 0,
+            "cleanliness": 0,
+            "energy": 0,
+            "mood": 0,
+            "exp": 0,
+            "intimacy": 0
+          }
+        },
+        "derived_tags_on_apply": [
+          "sleepy"
+        ],
+        "cooldown_sec": 240,
+        "stack_decay_group": "rest_family",
+        "effect_source": "rule"
+      }
+    }
+  ],
+  "tag_synonyms": {
+    "idle": [
+      "neutral",
+      "calm"
+    ],
+    "playful": [
+      "excited",
+      "bouncy"
+    ],
+    "curious": [
+      "alert",
+      "investigating"
+    ],
+    "rest": [
+      "sleepy",
+      "cozy"
+    ]
+  }
+}

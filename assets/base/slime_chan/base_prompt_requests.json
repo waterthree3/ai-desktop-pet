@@ -1,0 +1,199 @@
+{
+  "requests": [
+    {
+      "slot": "IDLE_NEUTRAL",
+      "target_file": "assets/base/slime_chan/IDLE_NEUTRAL.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["idle", "neutral", "calm"],
+        "behavior_type": "idle",
+        "action_desc": "rests in place with a soft rounded posture and a tiny gentle bounce",
+        "image_overrides": ["single character only", "full body visible", "clean rounded silhouette"],
+        "video_overrides": ["tiny breathing loop only", "return to the same pose", "avoid large position drift"],
+        "negative_overrides": ["no second character", "no large shape morphing"]
+      }
+    },
+    {
+      "slot": "WALK",
+      "target_file": "assets/base/slime_chan/WALK.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["walking", "wander", "explore"],
+        "behavior_type": "walk",
+        "action_desc": "takes short bouncy steps in place with a curious wandering rhythm",
+        "image_overrides": ["single character only", "full body visible", "readable lower-body motion cues"],
+        "video_overrides": ["small loop only", "fixed camera", "avoid large horizontal travel"],
+        "negative_overrides": ["no motion blur", "no second character"]
+      }
+    },
+    {
+      "slot": "FORCE_SLEEP",
+      "target_file": "assets/base/slime_chan/FORCE_SLEEP.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["sleep", "sleeping", "exhausted"],
+        "behavior_type": "force_sleep",
+        "action_desc": "drops into an exhausted sleep pose as if all energy has run out",
+        "image_overrides": ["single character only", "full body visible", "heavier sleepy posture"],
+        "video_overrides": ["slow exhausted breathing loop", "minimal motion", "return to the same pose"],
+        "negative_overrides": ["no alert expression", "no second character"]
+      }
+    },
+    {
+      "slot": "CARRIED",
+      "target_file": "assets/base/slime_chan/CARRIED.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["carried", "lifted", "scared"],
+        "behavior_type": "carried",
+        "action_desc": "is gently lifted into the air with a slightly tense wobble and startled expression",
+        "image_overrides": ["single character only", "full body visible", "clear suspended pose"],
+        "video_overrides": ["small suspended wobble", "fixed camera", "avoid large drift"],
+        "negative_overrides": ["no visible human hands", "no second character"]
+      }
+    },
+    {
+      "slot": "STROKE",
+      "target_file": "assets/base/slime_chan/STROKE.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["pet_stroke", "happy", "calm"],
+        "behavior_type": "pet_stroke",
+        "action_desc": "leans into a gentle petting reaction with a happy soft bounce and relaxed face",
+        "image_overrides": ["single character only", "full body visible", "happy receptive pose"],
+        "video_overrides": ["short satisfying loop", "small body bounce", "return to the same pose"],
+        "negative_overrides": ["no visible human hand", "no second character"]
+      }
+    },
+    {
+      "slot": "PLAY",
+      "target_file": "assets/base/slime_chan/PLAY.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["play_ball", "playful", "excited"],
+        "behavior_type": "play_ball",
+        "action_desc": "does a cheerful playful hop with a bright energetic rebound and eager attention",
+        "image_overrides": ["single character only", "full body visible", "clear playful pose"],
+        "video_overrides": ["small energetic loop", "avoid large position drift", "return to the same pose"],
+        "negative_overrides": ["no second character", "no extreme squash and stretch"]
+      }
+    },
+    {
+      "slot": "EAT",
+      "target_file": "assets/base/slime_chan/EAT.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["eat", "eating", "fed"],
+        "behavior_type": "eat",
+        "action_desc": "does a happy little eating reaction with eager nibbling and a satisfied bounce",
+        "image_overrides": ["single character only", "full body visible", "cute feeding pose"],
+        "video_overrides": ["short eating loop", "return to the same pose", "small mouth and body motion only"],
+        "negative_overrides": ["no visible human hand", "no table scene", "no second character"]
+      }
+    },
+    {
+      "slot": "BATH",
+      "target_file": "assets/base/slime_chan/BATH.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["bath", "cleanliness", "shaking"],
+        "behavior_type": "bath",
+        "action_desc": "reacts to a bath with a tiny wet shake and a slightly grumbly cute face",
+        "image_overrides": ["single character only", "full body visible", "clean readable silhouette"],
+        "video_overrides": ["short shake motion", "return to the same pose", "keep the character centered"],
+        "negative_overrides": ["no visible human hand", "no props", "no second character"]
+      }
+    },
+    {
+      "slot": "DOUBLE_CLICK",
+      "target_file": "assets/base/slime_chan/DOUBLE_CLICK.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["excited_spin", "excited", "jumping"],
+        "behavior_type": "double_click",
+        "action_desc": "bursts into a quick excited hop with a bright energetic reaction",
+        "image_overrides": ["single character only", "full body visible", "clear springy pose"],
+        "video_overrides": ["short energetic burst", "return to the same pose", "avoid large drift"],
+        "negative_overrides": ["no second character", "no blur"]
+      }
+    },
+    {
+      "slot": "DROWSY",
+      "target_file": "assets/base/slime_chan/DROWSY.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["drowsy_idle", "sleepy", "yawning"],
+        "behavior_type": "drowsy_idle",
+        "action_desc": "fights off sleep with heavy eyelids, a slow sway, and a tiny yawn",
+        "image_overrides": ["single character only", "full body visible", "sleepy half-awake pose"],
+        "video_overrides": ["slow tiny loop", "minimal motion", "return to the same pose"],
+        "negative_overrides": ["no wide awake face", "no second character"]
+      }
+    },
+    {
+      "slot": "FORCE_HUNGRY",
+      "target_file": "assets/base/slime_chan/FORCE_HUNGRY.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["starving", "hungry", "beg_food"],
+        "behavior_type": "force_hungry",
+        "action_desc": "looks very hungry and begs for food with needy bouncing and pleading eyes",
+        "image_overrides": ["single character only", "full body visible", "needy begging pose"],
+        "video_overrides": ["short pleading loop", "return to the same pose", "small body bounce"],
+        "negative_overrides": ["no second character", "no props"]
+      }
+    },
+    {
+      "slot": "FORCE_DIRTY",
+      "target_file": "assets/base/slime_chan/FORCE_DIRTY.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["filthy", "dirty_shake", "miserable"],
+        "behavior_type": "force_dirty",
+        "action_desc": "looks sticky and miserable, shaking off grime with an embarrassed pout",
+        "image_overrides": ["single character only", "full body visible", "readable unhappy silhouette"],
+        "video_overrides": ["short shaking loop", "return to the same pose", "keep the character centered"],
+        "negative_overrides": ["no second character", "no props"]
+      }
+    },
+    {
+      "slot": "FORCE_SAD",
+      "target_file": "assets/base/slime_chan/FORCE_SAD.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["depressed", "comforting", "sad_pet"],
+        "behavior_type": "force_sad",
+        "action_desc": "looks downcast and slowly perks up from a comforting soothing reaction",
+        "image_overrides": ["single character only", "full body visible", "gentle comfort pose"],
+        "video_overrides": ["short emotional loop", "return to the same pose", "small body motion only"],
+        "negative_overrides": ["no second character", "no props"]
+      }
+    }
+  ]
+}

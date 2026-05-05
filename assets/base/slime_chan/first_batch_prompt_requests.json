@@ -1,0 +1,134 @@
+{
+  "requests": [
+    {
+      "slot": "IDLE_NEUTRAL",
+      "target_file": "assets/base/slime_chan/IDLE_NEUTRAL.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["idle", "neutral", "calm"],
+        "behavior_type": "idle",
+        "action_desc": "rests in place with a soft rounded posture and a tiny gentle bounce",
+        "image_overrides": [
+          "single character only",
+          "full body visible",
+          "clean rounded silhouette"
+        ],
+        "video_overrides": [
+          "tiny breathing loop only",
+          "return to the same pose",
+          "avoid large position drift"
+        ],
+        "negative_overrides": [
+          "no second character",
+          "no large shape morphing"
+        ]
+      }
+    },
+    {
+      "slot": "WALK",
+      "target_file": "assets/base/slime_chan/WALK.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["walking", "wander", "explore"],
+        "behavior_type": "walk",
+        "action_desc": "takes short bouncy steps in place with a curious wandering rhythm",
+        "image_overrides": [
+          "single character only",
+          "full body visible",
+          "readable feet or lower-body motion cues"
+        ],
+        "video_overrides": [
+          "small loop only",
+          "fixed camera",
+          "avoid large horizontal travel"
+        ],
+        "negative_overrides": [
+          "no motion blur",
+          "no second character"
+        ]
+      }
+    },
+    {
+      "slot": "CARRIED",
+      "target_file": "assets/base/slime_chan/CARRIED.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["carried", "lifted", "scared"],
+        "behavior_type": "carried",
+        "action_desc": "is gently lifted into the air with a slightly tense wobble and startled expression",
+        "image_overrides": [
+          "single character only",
+          "full body visible",
+          "clear suspended pose"
+        ],
+        "video_overrides": [
+          "small suspended wobble",
+          "fixed camera",
+          "avoid large drift"
+        ],
+        "negative_overrides": [
+          "no visible human hands",
+          "no second character"
+        ]
+      }
+    },
+    {
+      "slot": "STROKE",
+      "target_file": "assets/base/slime_chan/STROKE.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["pet_stroke", "happy", "calm"],
+        "behavior_type": "pet_stroke",
+        "action_desc": "leans into a gentle petting reaction with a happy soft bounce and relaxed face",
+        "image_overrides": [
+          "single character only",
+          "full body visible",
+          "happy receptive pose"
+        ],
+        "video_overrides": [
+          "short satisfying loop",
+          "small body bounce",
+          "return to the same pose"
+        ],
+        "negative_overrides": [
+          "no visible human hand",
+          "no second character"
+        ]
+      }
+    },
+    {
+      "slot": "PLAY",
+      "target_file": "assets/base/slime_chan/PLAY.mp4",
+      "prompt_request": {
+        "pet_id": "slime_chan",
+        "pet_profile": "slime_chan",
+        "pet_label": "史莱姆酱",
+        "tags": ["play_ball", "playful", "excited"],
+        "behavior_type": "play",
+        "action_desc": "does a cheerful playful hop with a bright energetic rebound and eager attention",
+        "image_overrides": [
+          "single character only",
+          "full body visible",
+          "clear playful pose"
+        ],
+        "video_overrides": [
+          "small energetic loop",
+          "avoid large position drift",
+          "return to the same pose"
+        ],
+        "negative_overrides": [
+          "no second character",
+          "no extreme squash and stretch"
+        ]
+      }
+    }
+  ]
+}

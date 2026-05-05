@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+
+# Local databases
+*.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Test cache
+.pytest_cache/
+
+# Local scratch
+.tmp/
+log/
+
+# Runtime-generated media
+assets/generated/
+
+# LLM model files (download separately)
+models/*.gguf
+
+# Migration backups
+*.bak
+
+# Sensitive config
+assets/llm_config.json
