@@ -114,6 +114,22 @@ def _should_apply_animation_effect(req: EventRequest) -> bool:
     return not (req.kind == EventKind.STATE and req.movement == MovementIntent.SLEEP)
 
 
+def _is_direct_user_action(req: EventRequest | None) -> bool:
+    if req is None:
+        return False
+    return (
+        getattr(req, "source", None) == EventSource.USER
+        and getattr(req, "kind", None) == EventKind.ACTION
+        and getattr(req, "priority", None) == EventPriority.USER_INTERACTION
+    )
+
+
+def _can_override_equal_priority_user_action(req: EventRequest, cur: EventRequest) -> bool:
+    if not (_is_direct_user_action(req) and _is_direct_user_action(cur)):
+        return False
+    return str(getattr(req, "event_type", "") or "").strip() != str(getattr(cur, "event_type", "") or "").strip()
+
+
 class EventArbiter:
     def __init__(self, move_sm, event_anim_layer, pet_data, library_mgr,
                  on_dialogue=None, on_stats_update=None):
@@ -259,6 +275,8 @@ class EventArbiter:
             if req.priority > cur.priority:
                 return ArbiterResult(True)
             if req.priority == cur.priority:
+                if _can_override_equal_priority_user_action(req, cur):
+                    return ArbiterResult(True)
                 return ArbiterResult(False, f"same_priority:{cur.event_type}")
             return ArbiterResult(False, f"lower_priority:{cur.event_type}")
 

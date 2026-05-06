@@ -1,0 +1,132 @@
+{
+  "click": {
+    "conditions": [
+      {
+        "when": {
+          "mood": ">80"
+        },
+        "responses": [
+          "嘿呀，我在这里呀~",
+          "发现我啦，我今天心情超好。"
+        ],
+        "emotion_hint": "happy"
+      },
+      {
+        "when": {
+          "mood": "40-80"
+        },
+        "responses": [
+          "汪，我有在认真陪你哦。",
+          "我在，主人有事吗？"
+        ],
+        "emotion_hint": "neutral"
+      },
+      {
+        "when": {},
+        "responses": [
+          "我先贴着你待一会儿……",
+          "嘿，我还在呢。"
+        ],
+        "emotion_hint": "shy"
+      }
+    ]
+  },
+  "stroke": {
+    "conditions": [
+      {
+        "when": {
+          "mood": ">80"
+        },
+        "responses": [
+          "再摸摸我嘛，舒服得尾巴都要飞起来啦。",
+          "嘿呀，这种摸摸我超喜欢。"
+        ],
+        "emotion_hint": "happy"
+      },
+      {
+        "when": {
+          "mood": "30-80"
+        },
+        "responses": [
+          "嗯，好舒服呀。",
+          "这样轻轻摸我最安心了。"
+        ],
+        "emotion_hint": "happy"
+      },
+      {
+        "when": {},
+        "responses": [
+          "我会慢慢打起精神的……",
+          "谢谢你来哄我。"
+        ],
+        "emotion_hint": "sad"
+      }
+    ]
+  },
+  "double_click": {
+    "conditions": [
+      {
+        "when": {
+          "energy": ">60"
+        },
+        "responses": [
+          "哇，突然这么热情，我也要跟着兴奋起来啦！",
+          "汪汪！我已经准备好陪你玩啦。"
+        ],
+        "emotion_hint": "excited"
+      },
+      {
+        "when": {},
+        "responses": [
+          "欸？你戳得我一激灵。",
+          "突然连点我，我差点没反应过来。"
+        ],
+        "emotion_hint": "surprised"
+      }
+    ]
+  },
+  "play": {
+    "conditions": [
+      {
+        "when": {
+          "energy": "<30"
+        },
+        "responses": [
+          "我想陪你玩，可是现在有点没电了……",
+          "慢一点玩好不好，我快累趴啦。"
+        ],
+        "emotion_hint": "sleepy"
+      },
+      {
+        "when": {},
+        "responses": [
+          "来玩来玩，我已经摇着尾巴等不及啦！",
+          "最喜欢和你一起闹腾了。"
+        ],
+        "emotion_hint": "excited"
+      }
+    ]
+  },
+  "bath": {
+    "conditions": [
+      {
+        "when": {
+          "cleanliness": "<30"
+        },
+        "responses": [
+          "好吧，这次我承认自己确实有点脏了。",
+          "洗完澡我就会变成香香小狗。"
+        ],
+        "emotion_hint": "neutral"
+      },
+      {
+        "when": {},
+        "responses": [
+          "呜，洗澡的时候也请温柔一点哦。",
+          "湿漉漉的感觉怪怪的，不过会变干净。"
+        ],
+        "emotion_hint": "shy"
+      }
+    ]
+  }
+}

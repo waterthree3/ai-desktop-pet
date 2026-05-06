@@ -29,11 +29,21 @@ _L2_EVENTS = {
 
 
 class PetBrain:
-    def __init__(self, llm_engine, memory_manager, template_path: Path | None = None):
+    def __init__(
+        self,
+        llm_engine,
+        memory_manager,
+        template_path: Path | None = None,
+        overlay_template_path: Path | None = None,
+    ):
         self._llm = llm_engine
         self._memory = memory_manager
         self._template_path = Path(template_path or RESPONSE_TEMPLATES_PATH)
-        self._templates = self._load_templates(self._template_path)
+        self._overlay_template_path = Path(overlay_template_path) if overlay_template_path else None
+        self._templates = self._load_merged_templates(
+            self._template_path,
+            self._overlay_template_path,
+        )
         self._last_l2_at = 0.0
 
     def enrich_request(self, req: EventRequest | None, pet_state: dict) -> EventRequest | None:
@@ -225,8 +235,25 @@ class PetBrain:
         return str(value) == text
 
     @staticmethod
-    def _load_templates(path: Path) -> dict:
+    def _load_templates(path: Path | None) -> dict:
+        if path is None:
+            return {}
         try:
             return json.loads(path.read_text(encoding="utf-8"))
         except Exception:
             return {}
+
+    @classmethod
+    def _load_merged_templates(
+        cls,
+        base_path: Path | None,
+        overlay_path: Path | None,
+    ) -> dict:
+        base_templates = cls._load_templates(base_path)
+        overlay_templates = cls._load_templates(overlay_path)
+        if not overlay_templates:
+            return base_templates
+        merged = dict(base_templates)
+        for event_type, payload in overlay_templates.items():
+            merged[event_type] = payload
+        return merged

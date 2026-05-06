@@ -1,0 +1,224 @@
+{
+  "click": {
+    "conditions": [
+      {
+        "when": {
+          "mood": ">80"
+        },
+        "responses": [
+          "嘿嘿，我在这里呀~",
+          "发现我啦，我今天心情超好。"
+        ],
+        "emotion_hint": "happy"
+      },
+      {
+        "when": {
+          "mood": "40-80"
+        },
+        "responses": [
+          "我有在认真陪你哦。",
+          "我在，主人有事吗？"
+        ],
+        "emotion_hint": "neutral"
+      },
+      {
+        "when": {},
+        "responses": [
+          "我先贴着你待一会儿……",
+          "嗯，我还在呢。"
+        ],
+        "emotion_hint": "shy"
+      }
+    ]
+  },
+  "stroke": {
+    "conditions": [
+      {
+        "when": {
+          "mood": ">80"
+        },
+        "responses": [
+          "再摸摸我嘛，舒服得我都要飘起来啦。",
+          "嘿嘿，这种摸摸我超喜欢。"
+        ],
+        "emotion_hint": "happy"
+      },
+      {
+        "when": {
+          "mood": "30-80"
+        },
+        "responses": [
+          "呼，好舒服呀。",
+          "这样轻轻摸我最安心了。"
+        ],
+        "emotion_hint": "happy"
+      },
+      {
+        "when": {},
+        "responses": [
+          "我会慢慢打起精神的……",
+          "谢谢你来哄我。"
+        ],
+        "emotion_hint": "sad"
+      }
+    ]
+  },
+  "double_click": {
+    "conditions": [
+      {
+        "when": {
+          "energy": ">60"
+        },
+        "responses": [
+          "哇，突然这么热情，我也要跟着兴奋起来啦！",
+          "呀呀！我已经准备好陪你玩啦。"
+        ],
+        "emotion_hint": "excited"
+      },
+      {
+        "when": {},
+        "responses": [
+          "欸？你戳得我一激灵。",
+          "突然连点我，我差点没反应过来。"
+        ],
+        "emotion_hint": "surprised"
+      }
+    ]
+  },
+  "drag_start": {
+    "conditions": [
+      {
+        "when": {},
+        "responses": [
+          "呜哇，好高，不过如果是你抱我就还好……",
+          "被举起来啦，你要带我去哪里呀？"
+        ],
+        "emotion_hint": "surprised"
+      }
+    ]
+  },
+  "drag_end": {
+    "conditions": [
+      {
+        "when": {},
+        "responses": [
+          "落地啦，我继续陪着你。",
+          "呼，脚踩到地面的感觉真好。"
+        ],
+        "emotion_hint": "neutral"
+      }
+    ]
+  },
+  "feed": {
+    "conditions": [
+      {
+        "when": {
+          "hunger": "<35"
+        },
+        "responses": [
+          "呜呜，终于吃到啦，我刚刚真的好饿。",
+          "这口救命粮来得太及时了。"
+        ],
+        "emotion_hint": "excited"
+      },
+      {
+        "when": {},
+        "responses": [
+          "有饭吃就会幸福很多，谢谢主人。",
+          "咔嚓咔嚓，我会好好吃完的。"
+        ],
+        "emotion_hint": "happy"
+      }
+    ]
+  },
+  "play": {
+    "conditions": [
+      {
+        "when": {
+          "energy": "<30"
+        },
+        "responses": [
+          "我想陪你玩，可是现在有点没电了……",
+          "慢一点玩好不好，我快累趴啦。"
+        ],
+        "emotion_hint": "sleepy"
+      },
+      {
+        "when": {},
+        "responses": [
+          "来玩来玩，我已经等不及啦！",
+          "最喜欢和你一起闹腾了。"
+        ],
+        "emotion_hint": "excited"
+      }
+    ]
+  },
+  "bath": {
+    "conditions": [
+      {
+        "when": {
+          "cleanliness": "<30"
+        },
+        "responses": [
+          "好吧，这次我承认自己确实有点脏了。",
+          "洗完澡我就会变得香香净净。"
+        ],
+        "emotion_hint": "neutral"
+      },
+      {
+        "when": {},
+        "responses": [
+          "呜，洗澡的时候也请温柔一点哦。",
+          "湿漉漉的感觉怪怪的，不过会变干净。"
+        ],
+        "emotion_hint": "shy"
+      }
+    ]
+  },
+  "walk_mode": {
+    "conditions": [
+      {
+        "when": {
+          "energy": ">50"
+        },
+        "responses": [
+          "出发出发，我想去到处闻一闻。",
+          "我会一边散步一边替你看看桌面四周。"
+        ],
+        "emotion_hint": "curious"
+      },
+      {
+        "when": {},
+        "responses": [
+          "我陪你慢慢走，不过步子可能会小一点。",
+          "散散步也好，顺便活动一下。"
+        ],
+        "emotion_hint": "neutral"
+      }
+    ]
+  },
+  "FORCE_HUNGRY": {
+    "conditions": [
+      {
+        "when": {},
+        "responses": [
+          "肚子已经在咕咕叫了，我真的快饿扁啦。",
+          "主人，我需要一点吃的，不然要没精神了。"
+        ],
+        "emotion_hint": "sad"
+      }
+    ]
+  },
+  "DROWSY": {
+    "conditions": [
+      {
+        "when": {},
+        "responses": [
+          "眼皮越来越重了，我想先眯一小会儿……",
+          "我有点困，可能很快就会打哈欠。"
+        ],
+        "emotion_hint": "sleepy"
+      }
+    ]
+  }
+}

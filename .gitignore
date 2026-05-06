@@ -1,3 +1,6 @@
+# Sensitive config
+assets/llm_config.json
+
 # Python cache
 __pycache__/
 *.py[cod]
@@ -14,23 +17,20 @@ venv/
 
 # IDE settings
 .vscode/
-.idea/
+*.idea/
 
 # Test cache
 .pytest_cache/
 
-# Local scratch
+# Local scratch and test output
 .tmp/
 log/
+.pytest_tmp/
+sandbox_tmp_test*/
+test_tmp_base*/
 
-# Runtime-generated media
+# Runtime-generated media library
 assets/generated/
-
-# LLM model files (download separately)
-models/*.gguf
 
 # Migration backups
 *.bak
-
-# Sensitive config
-assets/llm_config.json

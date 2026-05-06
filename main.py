@@ -7,7 +7,7 @@ from PyQt6.QtCore    import QTimer, QPoint, QObject, pyqtSignal, QProcess
 from PyQt6.QtGui     import QGuiApplication
 
 from config import (
-    ANIM_INDEX_PATH, REF_IMAGE_PATH, GEN_ANIM_DIR, DECAY_PERSIST_EVERY,
+    ANIM_INDEX_PATH, REF_IMAGE_PATH, GEN_ANIM_DIR, DECAY_PERSIST_EVERY, BASE_ANIM_DIR,
     COMFYUI_URL, THRESHOLD_CHECK_MS, COMFYUI_API_WORKFLOW_PATH,
     HUNGRY_REMIND_S, DROWSY_REMIND_S,
     ENERGY_SLEEP_RECOVERY,
@@ -669,7 +669,7 @@ def main():
     move_sm = MovementStateMachine()
     llm     = IntentEngine()
     llm.load_model()
-    brain   = PetBrain(llm, mem)
+    brain   = PetBrain(llm, mem, overlay_template_path=BASE_ANIM_DIR / "response_templates.json")
     llm_state = {"enabled": llm.enabled}
     ai_diag = {
         "last_autonomous_block_log_at": 0.0,
